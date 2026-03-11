@@ -1,56 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Module 3 Assignment</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <title>Brasa & Mar | Restaurante</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-  <nav id="header-nav" class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a href="index.html" class="navbar-brand"><h1>Food, LLC</h1></a>
-
-        <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+  <header class="hero" id="inicio">
+    <div class="hero-overlay"></div>
+    <nav class="site-nav">
+      <a href="#inicio" class="brand">
+        <span class="brand-mark">B&M</span>
+        <span class="brand-text">Brasa & Mar</span>
+      </a>
+      <div class="nav-links">
+        <a href="#menu">Menú</a>
+        <a href="#historia">Historia</a>
+        <a href="#reserva">Reserva</a>
       </div>
+    </nav>
 
-      <div id="collapsable-nav" class="collapse navbar-collapse">
-        <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
-          <li class="text-center"><a href="#">Chicken</a></li>
-          <hr class="visible-xs">
-          <li class="text-center"><a href="#">Beef</a></li>
-          <hr class="visible-xs">
-          <li class="text-center"><a href="#">Sushi</a></li>
-        </ul>
+    <div class="hero-content">
+      <p class="eyebrow">Cocina costera con fuego lento</p>
+      <h1>Sabores intensos, servicio impecable y una mesa que invita a quedarse.</h1>
+      <p class="hero-copy">
+        Pescados frescos, cortes premium y una carta de vinos seleccionada para noches largas,
+        conversaciones lentas y cenas memorables.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#reserva">Reservar mesa</a>
+        <a class="button button-secondary" href="#menu">Ver especialidades</a>
+      </div>
+      <div class="hero-notes">
+        <span>Martes a Domingo</span>
+        <span>19:00 - 00:00</span>
+        <span>Centro histórico</span>
       </div>
     </div>
-  </nav>
+  </header>
 
-  <div id="main-content" class="container">
-    <h2 class="text-center">Our Menu</h2>
-    
-    <div class="row">
-      <div class="col-xs-12">
-        <div id="menu-tile">
+  <main>
+    <section class="intro-strip">
+      <article>
+        <p class="section-label">Experiencia</p>
+        <h2>Una casa de cocina contemporánea con alma mediterránea.</h2>
+      </article>
+      <article>
+        <p>
+          Diseñamos cada plato con producto local, técnica precisa y una presentación elegante
+          sin perder calidez. El resultado es una experiencia refinada, pero cercana.
+        </p>
+      </article>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-heading">
+        <p class="section-label">Menú destacado</p>
+        <h2>Platos pensados para compartir y recordar.</h2>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card featured-card">
+          <span class="card-tag">Favorito de la casa</span>
+          <h3>Arroz meloso de mariscos</h3>
           <p>
-            Add enough Lorem Ipsum text here to ensure the page scrolls! 
-            (Or set the height in your CSS).
+            Caldo profundo de crustáceos, azafrán, langostinos sellados y alioli suave de limón.
+          </p>
+          <strong>$24</strong>
+        </article>
+
+        <article class="menu-card">
+          <h3>Pulpo a la brasa</h3>
+          <p>Puré ahumado de papa, chimichurri verde y aceite de paprika.</p>
+          <strong>$18</strong>
+        </article>
+
+        <article class="menu-card">
+          <h3>Ribeye madurado</h3>
+          <p>Cocción a fuego abierto, mantequilla de hierbas y vegetales asados.</p>
+          <strong>$29</strong>
+        </article>
+
+        <article class="menu-card">
+          <h3>Tarta de cítricos</h3>
+          <p>Crema ligera de naranja, merengue tostado y crumble de almendra.</p>
+          <strong>$9</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="story-section" id="historia">
+      <div class="story-visual">
+        <div class="story-card">
+          <p class="section-label">Desde 2014</p>
+          <h2>Donde el mar y la brasa se encuentran.</h2>
+          <p>
+            Nacimos con una idea simple: cocinar ingredientes nobles con respeto por el tiempo,
+            el fuego y la temporada. Hoy seguimos sirviendo una cocina sincera en un espacio íntimo.
           </p>
         </div>
       </div>
-    </div>
-  </div>
 
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+      <div class="story-details">
+        <div class="detail-block">
+          <span>01</span>
+          <h3>Producto diario</h3>
+          <p>Cada mañana seleccionamos pesca fresca, verduras de huerta y cortes de origen certificado.</p>
+        </div>
+        <div class="detail-block">
+          <span>02</span>
+          <h3>Carta de vinos</h3>
+          <p>Etiquetas nacionales e internacionales elegidas para acompañar el carácter de cada plato.</p>
+        </div>
+        <div class="detail-block">
+          <span>03</span>
+          <h3>Ambiente</h3>
+          <p>Luces cálidas, texturas naturales y una terraza pensada para cenas largas y tranquilas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation-section" id="reserva">
+      <div class="reservation-copy">
+        <p class="section-label">Reserva</p>
+        <h2>Haz tu próxima cena especial.</h2>
+        <p>
+          Asegura tu mesa para una velada de autor, celebraciones íntimas o reuniones con buen vino.
+        </p>
+      </div>
+
+      <form class="reservation-form">
+        <label>
+          Nombre
+          <input type="text" placeholder="Tu nombre">
+        </label>
+        <label>
+          Correo
+          <input type="email" placeholder="correo@ejemplo.com">
+        </label>
+        <label>
+          Fecha
+          <input type="date">
+        </label>
+        <label>
+          Personas
+          <select>
+            <option>2 personas</option>
+            <option>4 personas</option>
+            <option>6 personas</option>
+            <option>8+ personas</option>
+          </select>
+        </label>
+        <button type="submit" class="button button-primary">Confirmar solicitud</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Brasa & Mar</p>
+    <p>Avenida del Puerto 128, Ciudad</p>
+    <p>+34 600 123 456</p>
+  </footer>
 </body>
 </html>
